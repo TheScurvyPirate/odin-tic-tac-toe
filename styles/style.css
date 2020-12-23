@@ -17,6 +17,86 @@
 
 body {
     display: flex;
+    height: 100vh;
     justify-content: center;
     background-color: var(--bg-dark);
+}
+
+#board-container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 128px);
+    height: min-content;
+    width: min-content;
+}
+
+div.cell {
+    width: 128px;
+    height: 128px;
+    box-sizing: border-box;
+    font-size: 64px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tl {
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    border-left: 4px transparent;
+    border-top: 4px transparent;
+}
+
+#tm {
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    border-left: 4px solid white;
+    border-top: 4px transparent;
+}
+
+#tr {
+    border-right: 4px transparent;
+    border-bottom: 4px solid white;
+    border-left: 4px solid white;
+    border-top: 4px transparent;
+}
+
+#ml {
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    border-left: 4px transparent;
+    border-top: 4px solid white;
+}
+
+#mm {
+    border: 4px solid white;
+}
+
+#mr {
+    border-right: 4px transparent;
+    border-bottom: 4px solid white;
+    border-left: 4px solid white;
+    border-top: 4px solid white;
+}
+
+#bl {
+    border-right: 4px solid white;
+    border-bottom: 4px transparent;
+    border-left: 4px transparent;
+    border-top: 4px solid white;
+}
+
+#bm {
+    border-right: 4px solid white;
+    border-bottom: 4px transparent;
+    border-left: 4px solid white;
+    border-top: 4px solid white;
+}
+
+#br {
+    border-right: 4px transparent;
+    border-bottom: 4px transparent;
+    border-left: 4px solid white;
+    border-top: 4px solid white;
 }
